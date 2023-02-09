@@ -1,15 +1,13 @@
-import copy
+
 import random
 
 from Ficha import *
-from copy import deepcopy
 
 
 class Juego:
     def __init__(self):
         self.fichas = [Ficha(f"{i}") for i in range(9)]
         self.movimientos = 0
-        self.che
         self.__iniciar_juego()
 
     def __iniciar_juego(self):
